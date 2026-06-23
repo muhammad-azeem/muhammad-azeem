@@ -35,25 +35,6 @@ I enjoy creating clean and functional applications using PHP, SQL, HTML, CSS, an
 
 ---
 
-## 📁 Featured Projects
-
-### 🔹 **Student Residence Connect**
-A complete web system for finding hostels near the University of Sahiwal.  
-Includes filters, details pages, recommendations, sentiment analysis, and maps.  
-👉 **Repo:** [Student Residence Connect](https://github.com/YOUR_GITHUB_USERNAME/Student-Residence-Connect)
-
-### 🔹 **Signup & Login Android App (Firebase Auth)**
-A mobile app for user authentication using Firebase.  
-👉 **Repo:** https://github.com/YOUR_GITHUB_USERNAME/Firebase-Login-App
-
-### 🔹 **PHP Product Recommendation System**
-A recommendation engine using PHP, Python, SQL, and sentiment analysis.  
-👉 **Repo:** https://github.com/YOUR_GITHUB_USERNAME/Product-Recommendation-System
-
-*(Add or remove project links as needed.)*
-
----
-
 ## 💼 Work Experience
 
 ### **CTO – PITB Incubation Center, University of Sahiwal (6 Months)**
