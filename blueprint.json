@@ -44,13 +44,6 @@
       }
     },
     {
-      "step": "setSiteOptions",
-      "options": {
-        "blogname": "Hospitality Uniforms & Embroidery",
-        "blogdescription": "Professional custom uniforms and embroidery for hospitality teams"
-      }
-    },
-    {
       "step": "login",
       "username": "admin",
       "password": "password"
