@@ -1,0 +1,21 @@
+<?php get_header(); ?>
+<?php if (hu_elementor_ready_content()) { while (have_posts()) { the_post(); the_content(); } get_footer(); return; } ?>
+<section class="page-hero" style="background-image:linear-gradient(90deg,rgba(3,19,34,.96),rgba(3,19,34,.48)),url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80');"><div class="container"><span class="eyebrow">HOSPITALITY UNIFORM SERVICES</span><h1>High-quality uniforms.<br><em>Expert embroidery.</em></h1><p>Complete branded workwear solutions for restaurants, hotels and hospitality teams.</p></div></section>
+<section class="section light-section"><div class="container"><div class="section-head reveal"><span class="eyebrow dark">CORE SERVICES</span><h2>Everything you need to create a consistent professional look.</h2></div><div class="service-grid">
+<article class="service-card reveal"><div class="service-icon">✦</div><h3>Custom Embroidery</h3><p>Professional logo embroidery applied to hospitality garments for a polished and consistent team identity.</p></article>
+<article class="service-card reveal"><div class="service-icon">◇</div><h3>Logo Digitization</h3><p>Your logo is prepared for embroidery so the stitching can reproduce it cleanly and consistently.</p></article>
+<article class="service-card reveal"><div class="service-icon">▦</div><h3>Branded Hospitality Apparel</h3><p>Chef wear, service uniforms, aprons, caps and suitable outerwear selected for hospitality use.</p></article>
+<article class="service-card reveal"><div class="service-icon">↻</div><h3>Easy Reordering</h3><p>Once your logo is set up, repeat orders become quicker and easier for growing or changing teams.</p></article>
+</div></div></section>
+<section class="section cream-section"><div class="container"><div class="section-head center reveal"><span class="eyebrow dark">PRODUCTS WE SPECIALIZE IN</span><h2>Built for kitchen, service and guest-facing teams.</h2></div><div class="product-grid">
+<article class="product-card reveal"><img src="https://unsplash.com/photos/VnFTWmdjw4Q/download?force=true&w=800" alt="Chef coats"><div><h3>Chef Coats</h3><p>Professional chef coats designed for demanding kitchen environments.</p></div></article>
+<article class="product-card reveal"><img src="https://unsplash.com/photos/lC8i5_lJqgU/download?force=true&w=800" alt="Server uniforms"><div><h3>Server Shirts &amp; Blouses</h3><p>Polished front-of-house uniforms suitable for daily guest service.</p></div></article>
+<article class="product-card reveal"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80" alt="Aprons"><div><h3>Waist &amp; Bib Aprons</h3><p>Practical branded aprons for kitchen, café, bar and service teams.</p></div></article>
+<article class="product-card reveal"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Hotel uniforms"><div><h3>Hotel Uniforms</h3><p>Smart uniforms for reception, concierge and guest-facing teams.</p></div></article>
+<article class="product-card reveal"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Caps and hats"><div><h3>Caps &amp; Hats</h3><p>Branded headwear for casual hospitality environments and outdoor teams.</p></div></article>
+<article class="product-card reveal"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=80" alt="Outerwear"><div><h3>Suitable Outerwear</h3><p>Layers selected to keep hospitality teams consistent across changing conditions.</p></div></article>
+</div></div></section>
+<section class="section dark-section"><div class="container"><div class="section-head center reveal"><span class="eyebrow">HOW IT WORKS</span><h2>Five clear steps from logo to delivery.</h2></div><div class="process-grid dark">
+<article><b>01</b><h3>Send us your logo</h3></article><article><b>02</b><h3>Receive a clear quote</h3></article><article><b>03</b><h3>Approve the design</h3></article><article><b>04</b><h3>We produce &amp; deliver</h3></article><article><b>05</b><h3>Easy reorders anytime</h3></article>
+</div><div class="center-cta"><a class="button button-gold" href="<?php echo esc_url(hu_get_page_url('get-a-quote')); ?>">Request a Free Quote →</a></div></div></section>
+<?php get_footer(); ?>
