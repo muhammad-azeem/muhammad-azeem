@@ -11,9 +11,9 @@ function hu_theme_setup() {
 add_action('after_setup_theme', 'hu_theme_setup');
 
 function hu_enqueue_assets() {
-    wp_enqueue_style('hu-style', get_stylesheet_uri(), [], '1.1.0');
-    wp_enqueue_style('hu-main', get_template_directory_uri().'/assets/css/main.css', ['hu-style'], '1.1.0');
-    wp_enqueue_script('hu-main', get_template_directory_uri().'/assets/js/main.js', [], '1.1.0', true);
+    wp_enqueue_style('hu-style', get_stylesheet_uri(), [], '1.1.1');
+    wp_enqueue_style('hu-main', get_template_directory_uri().'/assets/css/main.css', ['hu-style'], '1.1.1');
+    wp_enqueue_script('hu-main', get_template_directory_uri().'/assets/js/main.js', [], '1.1.1', true);
 }
 add_action('wp_enqueue_scripts', 'hu_enqueue_assets');
 
@@ -24,6 +24,7 @@ function hu_customize_register($wp_customize) {
         'hu_email'=>['Business Email',''],
         'hu_service_area'=>['Service Area','Service area to be confirmed'],
         'hu_whatsapp'=>['WhatsApp Number',''],
+        'hu_ga_id'=>['Google Analytics Measurement ID (optional)',''],
     ];
     foreach($settings as $key=>$data){
         $wp_customize->add_setting($key,['default'=>$data[1],'sanitize_callback'=>'sanitize_text_field']);
@@ -72,6 +73,15 @@ function hu_meta_description(){
     return get_bloginfo('description');
 }
 add_action('wp_head',function(){echo '<meta name="description" content="'.esc_attr(hu_meta_description()).'">'."\n";},1);
+
+function hu_output_analytics(){
+    $id=trim((string)get_theme_mod('hu_ga_id',''));
+    if(!$id || !preg_match('/^G-[A-Z0-9]+$/i',$id)) return;
+    $safe=esc_attr($id);
+    echo "<script async src=\"https://www.googletagmanager.com/gtag/js?id={$safe}\"></script>\n";
+    echo "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{$safe}');</script>\n";
+}
+add_action('wp_head','hu_output_analytics',20);
 
 function hu_elementor_ready_content(){
     if(!is_singular('page'))return false;
