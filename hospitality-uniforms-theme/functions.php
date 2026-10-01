@@ -89,3 +89,6 @@ function hu_elementor_ready_content(){
     return did_action('elementor/loaded')&&get_post_meta($id,'_elementor_edit_mode',true)==='builder';
 }
 add_filter('show_admin_bar','__return_false');
+
+// Built-in quote workflow for stable client preview.
+require_once get_template_directory() . '/inc/quote-manager.php';
