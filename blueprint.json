@@ -14,20 +14,8 @@
       "themeData": {
         "resource": "git:directory",
         "url": "https://github.com/muhammad-azeem/muhammad-azeem",
-        "ref": "hospitality-uniforms-wordpress-demo",
-        "path": "hospitality-uniforms-theme"
-      },
-      "options": {
-        "activate": true
-      }
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "git:directory",
-        "url": "https://github.com/muhammad-azeem/muhammad-azeem",
-        "ref": "hospitality-uniforms-wordpress-demo",
-        "path": "hospitality-quote-manager"
+        "ref": "hospitality-elementor-final",
+        "path": "hospitality-elementor-theme"
       },
       "options": {
         "activate": true
@@ -38,6 +26,30 @@
       "pluginData": {
         "resource": "wordpress.org/plugins",
         "slug": "elementor"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "git:directory",
+        "url": "https://github.com/muhammad-azeem/muhammad-azeem",
+        "ref": "hospitality-elementor-final",
+        "path": "hospitality-quote-manager"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "git:directory",
+        "url": "https://github.com/muhammad-azeem/muhammad-azeem",
+        "ref": "hospitality-elementor-final",
+        "path": "hospitality-elementor-setup"
       },
       "options": {
         "activate": true
