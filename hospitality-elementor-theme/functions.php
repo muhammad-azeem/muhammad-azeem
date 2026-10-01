@@ -76,5 +76,6 @@ function hue_output_analytics() {
 add_action('wp_head', 'hue_output_analytics', 20);
 
 
-// Elementor demo content installer.
+// Built-in quote workflow and Elementor demo installer.
+require_once get_template_directory() . '/inc/quote-manager.php';
 require_once get_template_directory() . '/inc/elementor-setup.php';
