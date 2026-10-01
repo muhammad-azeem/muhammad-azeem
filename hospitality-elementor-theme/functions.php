@@ -50,7 +50,7 @@ add_action('customize_register', 'hue_customize_register');
 function hue_render_elementor_template($option_key) {
     $template_id = (int) get_option($option_key, 0);
     if (!$template_id || !did_action('elementor/loaded') || !class_exists('\\Elementor\\Plugin')) return false;
-    echo \\Elementor\\Plugin::$instance->frontend->get_builder_content_for_display($template_id);
+    echo \Elementor\Plugin::$instance->frontend->get_builder_content_for_display($template_id);
     return true;
 }
 
