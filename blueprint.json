@@ -14,30 +14,9 @@
       "themeData": {
         "resource": "git:directory",
         "url": "https://github.com/muhammad-azeem/muhammad-azeem",
-        "ref": "hospitality-uniforms-wordpress-demo",
+        "ref": "hospitality-client-preview",
+        "refType": "branch",
         "path": "hospitality-uniforms-theme"
-      },
-      "options": {
-        "activate": true
-      }
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "git:directory",
-        "url": "https://github.com/muhammad-azeem/muhammad-azeem",
-        "ref": "hospitality-uniforms-wordpress-demo",
-        "path": "hospitality-quote-manager"
-      },
-      "options": {
-        "activate": true
-      }
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "wordpress.org/plugins",
-        "slug": "elementor"
       },
       "options": {
         "activate": true
