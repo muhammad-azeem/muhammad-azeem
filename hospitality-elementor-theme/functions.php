@@ -74,3 +74,7 @@ function hue_output_analytics() {
     echo "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{$safe}');</script>\n";
 }
 add_action('wp_head', 'hue_output_analytics', 20);
+
+
+// Elementor demo content installer.
+require_once get_template_directory() . '/inc/elementor-setup.php';
