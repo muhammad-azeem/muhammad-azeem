@@ -15,6 +15,7 @@
         "resource": "git:directory",
         "url": "https://github.com/muhammad-azeem/muhammad-azeem",
         "ref": "hospitality-elementor-final",
+        "refType": "branch",
         "path": "hospitality-elementor-theme"
       },
       "options": {
@@ -24,23 +25,12 @@
     {
       "step": "installPlugin",
       "pluginData": {
-        "resource": "wordpress.org/plugins",
-        "slug": "elementor"
+        "resource": "url",
+        "url": "https://downloads.wordpress.org/plugin/elementor.4.2.4.zip"
       },
       "options": {
-        "activate": true
-      }
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "git:directory",
-        "url": "https://github.com/muhammad-azeem/muhammad-azeem",
-        "ref": "hospitality-elementor-final",
-        "path": "hospitality-quote-manager"
-      },
-      "options": {
-        "activate": true
+        "activate": true,
+        "targetFolderName": "elementor"
       }
     },
     {
